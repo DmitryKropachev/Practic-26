@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Пример 36</title>
+</head>
+<body>
+	<h1>Пример 36</h1>
+	<p>Исходная строка: "55.76, 56.01, 56.11, 55.88, 55.99"</p>
+	<p>Результат:</p>
+	<div id="output"></div>
+	<script>
+		const str = "55.76, 56.01, 56.11, 55.88, 55.99";
+		const arr = str.split(", ");
+		const numArr = arr.map(Number);
+		document.getElementById("output").innerHTML = numArr.join(", ");
+	</script>
+</body>
+</html>
